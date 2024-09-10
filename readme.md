@@ -21,7 +21,7 @@
   <h3 align="center">Plataforma Web/Desktop Planet3</h3>
 
   <p align="center">
-    Modelo padrão da plataforma para aploicações web utilizada pela Planet3 em seus projetos
+    Modelo padrão da plataforma para aplicações web utilizada pela Planet3 em seus projetos
     <br />
     <a href="#"><strong>Explore the docs »</strong></a>
     <br />
@@ -73,89 +73,85 @@ Esta plataforma tem como obetivo montar uma aplicação cliente replicando o est
 Nossa plataforma também é pensada em modo mobile, portanto a informação do cliente estará em suas mãos a um clique de distância
 Outra vantagem é o uso de Cloud Computing, onde a grande maioria das transações efetuadas pelo cliente serão executadas em um srvidor na nuvem, não sendo necessário o usio de um grande servidor no cliente e nem máquinas clientes muito poderosas.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+Vantagens:
+* Sistema Multi Plataforma. Não importa o sistema operacional da máquina cliente, basta um browser com comexão a internet com o JS ligado
+* Processamento na Nuvem. Qualquer máquina, por mais antiga que seja, consegue rodar o sistema, já que a grande quantidade de processamento fica a conta do servidor que esta rodando na nuvem
+* Mobilidade. Abra o sistema em qualquer lugar, não precisa de instalação nem de servidor no cliente
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-### Built With
+### Tecnologias Utilizadas
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Totalmente desenvolvido apenas em HTML,CSS e JS no lado cliente e PHP e MYSQL do lado servidor, tecnologias open source, gratuítas e consolidadas no mercado, de fácil desenvolvimento, implementação e manutenção.
+Código totalmente organizado em sistema de pastas, utilização de templates HTML, onde cada módulo é desenvolvido e programado separadamente (o código HTML, CSS e JS específico para cada página estão contidas nela), códigos de usu gerais, utilizados em várias paginas, como funções de salvar arquivos, abrir páginas, componentes, etc, estes estão organizados em pastas na raiz do sistema, separados por extenções
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Como Utilizar
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+### Pré Requesitos
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+SERVIDOR: no caso de desenvoilvimento, pode ser um servidor local, como o XAMPP ou LAMPP por exemplo.
+BASE DE DADOS: um servidor MySQL ou MariaDB, os scripts para criação das tabelas e procedures basicas estão na pasta SQL
+
+Recomenda-se a utilização do Visual Studio Code, mas pode-se utilizar outra IDE de sua preferência.
+
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+Para começar um projeto novo é bem simples, basta fazer o download, ou clonar este repositório em uma pasta de um servidor, dando as permissões necessárias.
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/talesCPV/plat-3
    ```
-3. Install NPM packages
+2. Dê as permissões necessárias
    ```sh
-   npm install
+   sudo chmod 777 *
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Crie um novo banco de dados  `MySQL`
+   ```sql
+   CREATE DATABASE meu_banco_de_dados;
    ```
-5. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
+4. Altere o arquivo connect.php dentro da pasta backend/ com os dados do seu banco criado
+
+5. Acesse a pasta pelo browser:
+   ```http
+    localhost/minhapasta
    ```
+6. Usuário e senha inicial:
+   ```
+    usuario: admin@planet3.com.br
+    senha: 123456   
+    ```
+
+7. Vá no menu Sistema/Permissões, com o botão direito sobre o módulo raiz adicione ou delete os módulos desejados
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Usuários
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+No menu Sistema/Permissões você pode criar perfis de usuários, os quais você pode liberar acesso aos módulos que este perfil poderá acessar do sistema, estas permissões são dadas com um clique do botão esquerdo do mouse sobre os ítens dos módulos
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+No Menu Sistema/Usuários você pode criar seus usuários, sempre ligados ua um perfil. O usuário ROOT é o usuário apenas para desenvolvimento, este tem acesso a todos os módulos do sistema, independente de permissões geradas para ele.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- ROADMAP -->
+<!-- ROADMAP 
 ## Roadmap
 
 - [x] Add Changelog
@@ -170,26 +166,23 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+-->
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Contribuições
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Este projeto foi inteiramente criado e desenvolvido por Tales Cembraneli Dantas, https://github.com/talesCPV.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Se você deseja fazer parte deste projeto, por favor entre em contato comigo pelo whatsapp +5512997113793
+Obrigado
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
-### Top contributors:
 
-<a href="https://github.com/othneildrew/Best-README-Template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=othneildrew/Best-README-Template" alt="contrib.rocks image" />
+### 
+
+<a href="https://github.com/talesCPV">
+
+  <img src="https://avatars.githubusercontent.com/u/11446319?v=4" alt="contrib.rocks image" />
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -208,15 +201,18 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Tales Cembraneli Dantas - tales@planet3.com.br
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: <a href="https://github.com/talesCPV/plat-3">PLAT-3</a>
+
+Project DEMO: <a href="https://planet3.com.br/modelo/index.html?user=visitante@planet3.com.br&pass=123456">Clique Aqui!</a> 
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- ACKNOWLEDGMENTS -->
+<!-- ACKNOWLEDGMENTS 
 ## Acknowledgments
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
@@ -232,7 +228,7 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
+-->
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
