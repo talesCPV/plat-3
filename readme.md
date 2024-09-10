@@ -124,7 +124,7 @@ Para começar um projeto novo é bem simples, basta fazer o download, ou clonar 
 4. Altere o arquivo connect.php dentro da pasta backend/ com os dados do seu banco criado
 
 5. Acesse a pasta pelo browser:
-   ```http
+   ```
     localhost/minhapasta
    ```
 6. Usuário e senha inicial:
