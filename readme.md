@@ -117,23 +117,28 @@ Para começar um projeto novo é bem simples, basta fazer o download, ou clonar 
    ```sh
    sudo chmod 777 *
    ```
-3. Crie um novo banco de dados  `MySQL`
+3. Crie um novo banco de dados  `MySQL` 
    ```sql
    CREATE DATABASE meu_banco_de_dados;
    ```
-4. Altere o arquivo connect.php dentro da pasta backend/ com os dados do seu banco criado
+4. Rode os scripts tbl.sql e sp.sql dentro do banco criado
 
-5. Acesse a pasta pelo browser:
+5. Altere o arquivo connect.php dentro da pasta backend/ com os dados do seu banco criado
+    ```
+    $conexao = new mysqli("IP DO BANCO", "USUÁRIO", "SENHA", "NOME DO BANCO");
+    ```
+
+6. Acesse a pasta pelo browser:
    ```
-    localhost/minhapasta
+    https://localhost/minhapasta
    ```
-6. Usuário e senha inicial:
-   ```
+7. Usuário e senha inicial:
+    ```
     usuario: admin@planet3.com.br
     senha: 123456   
     ```
 
-7. Vá no menu Sistema/Permissões, com o botão direito sobre o módulo raiz adicione ou delete os módulos desejados
+8. Vá no menu Sistema/Permissões, com o botão direito sobre o módulo raiz adicione ou delete os módulos desejados
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
